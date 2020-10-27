@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <!-- refatoração da tag table para nav -->
+    <nav class="menu">
+        <a href="index.html">
+            <img width="100" src="./imagens/logofullstackeletro.jpeg" alt="logo da loja full stack eletro">
+        </a>
+        <a href="produtos.html">Produtos</a>
+        <a href="lojas.html">Nossas lojas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <header>
+        <h1>Produtos</h1>
+    </header>
+    <hr>
+    <!-- inclusão de classes e ids para acessar eventos -->
+
+    <section class="categorias">
+        <h3>Categorias</h3>
+        <ul>
+            <li onclick="exibirTodos()">Todos</li>
+            <li onclick="exibirCategoria('geladeiras')">Geladeiras (3)</li>
+            <li onclick="exibirCategoria('fogoes')">Fogões (2)</li>
+            <li onclick="exibirCategoria('microondas')"> Microondas (3)</li>
+            <li onclick="exibirCategoria('lavadouraderoupas')">Lavadoura de roupas (2)</li>
+            <li onclick="exibirCategoria('lavaloucas')">Lava-louças (2)</li>
+        </ul>
+    </section>
+
+    <section class="produtos">
+             
+        <!-- produto 01 -->
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img src="./imagens/geladeirabrastemp540.jpeg" alt="Geladeira Brastemp 540 litros" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+            <hr>
+            <p class="precoAnterior">6.389,00</p>
+            <br>
+            <p class="preco">5019,00</p>
+            <br>
+        </div>
+
+        <!-- produto 02 -->
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img src="./imagens/geladeirabrastemp375.jpeg" alt="Geladeira Brastemp 375 litros" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira Frost Free Brastemp Branca 375 litros</p>
+            <hr>
+            <p class="precoAnterior">2068,60</p>
+            <br>
+            <p class="preco">1910,90</p>
+            <br>
+        </div>
+
+        <!-- produto 03 -->
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img src="./imagens/geladeiraconsul340.jpeg" alt="Geladeira Consul 340 litros" id="problematico" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira Frost Free Consul Prata 340 litros</p>
+            <hr>
+            <p class="precoAnterior">2.199,99</p>
+            <br>
+            <p class="preco">2.069,00</p>
+            <br>
+        </div>
+
+        <!-- produto 04 -->
+        <div class="box_produto" id="fogoes" style="display: inline-block;">
+            <img src="./imagens/fogaoconsul4bocas.jpeg" alt="Fogão Consul 4 bocas" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Fogão 4 Bocas Consul Inox com Mesa de Vidro</p>
+            <hr>
+            <p class="precoAnterior">1.299,99</p>
+            <br>
+            <p class="preco">1.129,00</p>
+            <br>
+        </div>
+
+        <!-- linha 2 -->
+        <!-- produto 05 -->
+        <div class="box_produto" id="fogoes" style="display: inline-block;">
+            <img src="./imagens/fogaoatlas4bocas.jpeg" alt="Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático</p>
+            <hr>
+            <p class="precoAnterior">609,99</p>
+            <br>
+            <p class="preco">519,70</p>
+            <br>
+        </div>
+
+        <!-- produto 06 -->
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img src="./imagens/microondasconsul32.jpeg" alt="Microondas Consul 32 litros Inox 220V" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Microondas Consul 32 litros Inox 220V</p>
+            <hr>
+            <p class="precoAnterior">589,99</p>
+            <br>
+            <p class="preco">409,88</p>
+            <br>
+        </div>
+
+        <!-- produto 07 -->
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img src="./imagens/microondasphilco25l.jpeg" alt="Microondas 25L Espelhado Philco 220V" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Microondas 25L Espelhado Philco 220V</p>
+            <hr>
+            <p class="precoAnterior">508,70</p>
+            <br>
+            <p class="preco">464,53</p>
+            <br>
+        </div>
+
+        <!-- produto 08 -->
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img src="./imagens/microondasElectrolux.jpeg" alt="Forno de Microondas Electrolux 20L Branco" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Forno de Microondas Electrolux 20L Branco</p>
+            <hr>
+            <p class="precoAnterior">459,99</p>
+            <br>
+            <p class="preco">436,05</p>
+            <br>
+        </div>
+
+        <!-- linha 3 -->
+        <!-- produto 09 -->
+        <div class="box_produto" id="lavaloucas" style="display: inline-block;">
+            <img src="./imagens/lavaloucaeletrolux.jpeg" alt="imagem de Lava-Louça Electrolux" onclick="destaque(this)">
+            <br>
+            <p class="descricao">
+                Lava-Louça Electrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch
+            </p>
+            <hr>
+            <p class="precoAnterior">3.599,00</p>
+            <br>
+            <p class="preco">2.799,90</p>
+            <br>
+        </div>
+
+        <!-- produto 10 -->
+        <div class="box_produto" id="lavaloucas" style="display: inline-block;">
+            <img src="./imagens/lavaloucabrastemp.jpeg" alt="imagem de Lava-Louça Brastemp" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Lava louça Compacta 8 Serviços Branca 127V Brastemp</p>
+            <hr>
+            <p class="precoAnterior">1970,50</p>
+            <br>
+            <p class="preco">1.730,61</p>
+            <br>
+        </div>
+
+        <!-- produto 11 -->
+        <div class="box_produto" id="lavadouraderoupas" style="display: inline-block;">
+            <img src="./imagens/lavadourabrastemp.jpeg" alt="imagem de Lavadoura de roupas Brastemp" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Lavadoura de Roupas Brastemp 11 kg com Turbo Performance Branca</p>
+            <hr>
+            <p class="precoAnterior">1.699,99</p>
+            <br>
+            <p class="preco">1.214,10</p>
+            <br>
+        </div>
+
+        <!-- produto 12 -->
+        <div class="box_produto" id="lavadouraderoupas" style="display: inline-block;">
+            <img src="./imagens/lavadouraphilco.jpeg" alt="imagem de lavadoura de roupas Philco" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Lavadoura de Roupas Philco Inverter 12KG</p>
+            <hr>
+            <p class="precoAnterior">2.399,99</p>
+            <br>
+            <p class="preco">2.179,90</p>
+            <br>
+        </div>
+    </section>
+
+    <!-- refatorando rodapé -->
+    <footer class="rodape">
+        <p class="formas_pagamento"><span class="negrito">Formas de Pagamento</span></p>
+        <img height="100" src="./imagens/formasdepagamentos.jpeg" alt="Formas de pagamentos aceitas">
+        <p>&copy;Recode2020</p>
+        <br><br>
+        <span class="credito"><span class="negrito">Professora: </span> Antonia Luciana Pires <span
+                class="negrito">Aluno:
+            </span> Felipe Dantas do nascimento</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
